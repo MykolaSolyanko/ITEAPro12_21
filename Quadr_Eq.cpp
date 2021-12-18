@@ -25,8 +25,6 @@ Quadr_Eq::~Quadr_Eq()
 	delete[] result;
 }
 
- 
-
 Quadr_Eq& Quadr_Eq::operator=(Quadr_Eq move)// 
 {
 	if (this == &move)return*this;   // 

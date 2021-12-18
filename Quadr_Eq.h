@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 
-constexpr size_t two{ 2 }, four{ 4 };// константы чисел 2 и 4(не понимаю, дл чего это было задано, но написал и применил в методе calculation()
+constexpr size_t two{ 2 }, four{ 4 };// константы чисел 2 и 4(не понимаю, дл чего это было задано, но написал и применил в методе calculation
 
 class Quadr_Eq
 {
@@ -19,8 +19,8 @@ public:
 	Quadr_Eq(const Quadr_Eq& copy);//конструктор копирования(правило "3" и  "5") 
 	Quadr_Eq(Quadr_Eq&& move)noexcept;// конструктор перемещения(правило 5)
 	~Quadr_Eq();// деструктор(правило "3" и "5")
- 
-	Quadr_Eq& operator=(Quadr_Eq obj); // универсальный оператор присваивания(не знаю насколько правильно его описывать в таком виде, но..)
+
+	Quadr_Eq& operator=(Quadr_Eq obj); // универсальный операор присваивания(не знаю насколько правильно его описывать в таком виде, но..)
 	
 	 
 	void print()const; //вывод в консоль
