@@ -8,52 +8,51 @@ int main() {
   double a{};
   double b{};
   double c{};
-  const int min{0};
-  const int max{1000};
+  constexpr int min{0};
+  constexpr int max{1000};
 
   while (true) {
-    cout << "Введите значение а от 1 до 1000:";
+    cout << "Введите значение а от " << min << " до " << max;
     cin >> a;
     if (a > min && a < max) {
       break;
-    } else {
-      cout << "Неправильный диапазон! Введите число от 1 до 1000\n";
     }
+    cout << "Неправильный диапазон! Введите число от " << min << " до " << max
+         << endl;
   }
 
   while (true) {
-    cout << "Введите значение b от 1 до 1000:";
+    cout << "Введите значение b от " << min << " до " << max;
     cin >> b;
     if (b > min && b < max) {
       break;
-    } else {
-      cout << "Неправильный диапазон! Введите число от 1 до 1000\n";
     }
+    cout << "Неправильный диапазон! Введите число от " << min << " до " << max
+         << endl;
   }
 
   while (true) {
-    cout << "Введите значение c от 1 до 1000:";
+    cout << "Введите значение c от " << min << " до " << max;
     cin >> c;
     if (c > min && c < max) {
       break;
-    } else {
-      cout << "Неправильный диапазон! Введите число от 1 до 1000\n";
     }
+    cout << "Неправильный диапазон! Введите число от " << min << " до " << max
+         << endl;
   }
 
-  const double d = b * b - 4 * a * c; //дискриминант
+  const double d{b * b - 4 * a * c}; // discriminant
 
   if (d >= 0) {
-    double x1{};
-    double x2{};
 
-    x1 = (-1 * b + sqrt(d)) / (2 * a);
+    long double x1{(-1 * b + sqrt(d)) / (2 * a)};
     cout << "Первый корень: " << x1 << endl;
-    x2 = (-1 * b - sqrt(d)) / (2 * a);
+    long double x2{(-1 * b - sqrt(d)) / (2 * a)};
     cout << "Второй корень: " << x2 << endl;
-  } else {
-    cout << "Корень несущественый. Дискриминант меньше 0" << endl;
+    return 0;
   }
+
+  cout << "Корень несущественый. Дискриминант меньше 0" << endl;
 
   return 0;
 }
