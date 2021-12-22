@@ -1,22 +1,22 @@
 #include <iostream>
 
 int main() {
-  int size_t;
+  size_t a_size;
   long sum;
   std::cout << "Введите количество чисел: ";
-  std::cin >> size_t;
-  int a[size_t];
-  for (int i = 0; i < size_t; ++i) {
+  std::cin >> a_size;
+  int a[a_size];
+  for (int i = 0; i < a_size; ++i) {
     std::cout << "Введите число: ";
     std::cin >> a[i];
   }
 
-  for (int i = 0; i < size_t; ++i) {
+  for (int i = 0; i < a_size; ++i) {
     sum += a[i];
   }
 
   std::cout << "Сумма ваших чисел: " << sum << std::endl;
-  float avarege = sum / size_t;
+  float avarege = sum / a_size;
   std::cout << "Среднее арифметическое: " << avarege << std::endl;
 
   return 0;
