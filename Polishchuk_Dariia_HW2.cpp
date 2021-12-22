@@ -6,12 +6,12 @@ int main() {
   std::cout << "Введите количество чисел: ";
   std::cin >> size_t;
   int a[size_t];
-  for (int i = 0; i < size_t; i++) {
+  for (int i = 0; i < size_t; ++i) {
     std::cout << "Введите число: ";
     std::cin >> a[i];
   }
 
-  for (int i = 0; i < size_t; i++) {
+  for (int i = 0; i < size_t; ++i) {
     sum += a[i];
   }
 
