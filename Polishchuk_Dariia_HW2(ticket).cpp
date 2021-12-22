@@ -6,7 +6,7 @@ int main() {
   constexpr int min{0};
   constexpr int max{9};
   std::cout << "Введите число от " << min << " до " << max << std::endl;
-  for (int i = 0; i < array_size; i++) {
+  for (int i = 0; i < array_size; ++i) {
 
     while (true) {
       std::cin >> a[i];
