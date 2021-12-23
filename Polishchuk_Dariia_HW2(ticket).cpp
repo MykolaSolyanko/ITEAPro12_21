@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-  size_t array_size = 6;
+  size_t array_size {6};
   int a[array_size];
   constexpr int min{0};
   constexpr int max{9};
