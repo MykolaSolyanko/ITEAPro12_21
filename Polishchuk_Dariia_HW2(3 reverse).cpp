@@ -3,13 +3,13 @@
 int main() {
   int number{};
   int reverse_number = 0;
-  std::cout << "Введите число: ";
+  std::cout << "Insert the number: ";
   std::cin >> number;
   while (number) {
     reverse_number = reverse_number * 10 + number % 10;
     number /= 10;
   }
-  std::cout << "Обратное число: " << reverse_number << std::endl;
+  std::cout << "Reverse number: " << reverse_number << std::endl;
 
   return 0;
 }
