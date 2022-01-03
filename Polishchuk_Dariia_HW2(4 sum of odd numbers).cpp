@@ -8,7 +8,7 @@ int main() {
   constexpr int max{90};
   long sum{0};
 
-  std::cout << "Введите число от " << min << " до " << max << std::endl;
+  std::cout << "Enter a number from " << min << " before " << max << std::endl;
 
   for (int i = 0; i < array_size; ++i) {
 
@@ -17,15 +17,14 @@ int main() {
       if (a[i] > min && a[i] < max) {
         break;
       }
-      std::cout << "Вы ввели некорректное число. Повторите ввод от " << min
-                << " до " << max << std::endl;
+      std::cout << "You entered an invalid number. Repeat input from " << min << " before " << max << std::endl;
     }
 
     if (a[i] % 2 != 0) {
       sum += a[i];
     }
   }
-  std::cout << "Сумма нечетных чисел: " << sum << std::endl;
+  std::cout << "Sum of odd numbers: " << sum << std::endl;
 
   return 0;
 }
