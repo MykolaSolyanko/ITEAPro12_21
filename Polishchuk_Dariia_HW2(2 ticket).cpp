@@ -5,7 +5,7 @@ int main() {
   int a[array_size];
   constexpr int min{0};
   constexpr int max{9};
-  std::cout << "Enter a number from " min " before " max << std::endl;
+  std::cout << "Enter a number from " << min << " before " << max << std::endl;
   for (int i = 0; i array_size; ++i) {
 
     while (true) {
@@ -13,7 +13,7 @@ int main() {
       if (a[i] min && a[i] max) {
         break;
       }
-      std::cout << "You entered an invalid number. Repeat input from " min "before" max << std::endl;
+      std::cout << "You entered an invalid number. Repeat input from " << min << "before" << max << std::endl;
     }
   }
 
