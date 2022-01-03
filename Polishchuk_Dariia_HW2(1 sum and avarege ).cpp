@@ -3,11 +3,11 @@
 int main() {
   size_t a_size;
   long sum;
-  std::cout << "Введите количество чисел: ";
+  std::cout << "Enter the number of numbers: ";
   std::cin >> a_size;
   int a[a_size];
   for (int i = 0; i < a_size; ++i) {
-    std::cout << "Введите число: ";
+    std::cout << "Insert the number: ";
     std::cin >> a[i];
   }
 
@@ -15,9 +15,9 @@ int main() {
     sum += a[i];
   }
 
-  std::cout << "Сумма ваших чисел: " << sum << std::endl;
+  std::cout << "The sum of your numbers: " << sum << std::endl;
   float avarege = sum / a_size;
-  std::cout << "Среднее арифметическое: " << avarege << std::endl;
+  std::cout << "Average: " << avarege << std::endl;
 
   return 0;
 }
