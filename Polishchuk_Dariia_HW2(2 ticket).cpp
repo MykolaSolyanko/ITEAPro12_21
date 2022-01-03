@@ -1,26 +1,26 @@
 #include iostream
 
 int main() {
-  size_t array_size {6};
+  size_t array_size{6};
   int a[array_size];
   constexpr int min{0};
   constexpr int max{9};
-  stdcout  Введите число от   min   до   max  stdendl;
-  for (int i = 0; i  array_size; ++i) {
+  std::cout << "Enter a number from " min " before " max << std::endl;
+  for (int i = 0; i array_size; ++i) {
 
     while (true) {
-      stdcin  a[i];
-      if (a[i]  min && a[i]  max) {
+      std::cin >> a[i];
+      if (a[i] min && a[i] max) {
         break;
       }
-      stdcout  Вы ввели некорректное число. Повторите ввод от   min   до   max  stdendl;
+      std::cout << "You entered an invalid number. Repeat input from " min "before" max << std::endl;
     }
   }
 
   if (a[0] + a[1] + a[2] == a[3] + a[4] + a[5]) {
-    stdcout  Ваш белетик счастливый!!!  stdendl;
+    std::cout << "Your ticket is happy!!!" << std::endl;
   } else {
-    stdcout  Вам повезет в следующий раз  stdendl;
+    std::cout << "You will be lucky next time" << std::endl;
   }
 
   return 0;
