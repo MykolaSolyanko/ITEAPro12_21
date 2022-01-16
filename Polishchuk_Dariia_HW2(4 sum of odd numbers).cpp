@@ -2,29 +2,21 @@
 
 int main() {
 
-  size_t array_size{10};
-  int a[array_size];
-  constexpr int min{-60};
-  constexpr int max{90};
-  long sum{0};
+    int number{};
+    constexpr int min{ -60 };
+    constexpr int max{ 90 };
+    long sum{};
 
-  std::cout << "Enter a number from " << min << " before " << max << std::endl;
+    std::cout << "Enter a number from " << min << " before " << max << std::endl;
+    while (number >= min && number <= max) {
+        std::cin >> number;
 
-  for (int i = 0; i < array_size; ++i) {
-
-    while (true) {
-      std::cin >> a[i];
-      if (a[i] > min && a[i] < max) {
-        break;
-      }
-      std::cout << "You entered an invalid number. Repeat input from " << min << " before " << max << std::endl;
+        if (number % 2 != 0) {
+            sum += number;
+        }
     }
 
-    if (a[i] % 2 != 0) {
-      sum += a[i];
-    }
-  }
-  std::cout << "Sum of odd numbers: " << sum << std::endl;
+    std::cout << "Sum of odd numbers: " << sum << std::endl;
 
-  return 0;
+    return 0;
 }

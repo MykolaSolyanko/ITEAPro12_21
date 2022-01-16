@@ -1,23 +1,23 @@
 #include <iostream>
 
 int main() {
-  size_t a_size;
-  long sum;
-  std::cout << "Enter the number of numbers: ";
-  std::cin >> a_size;
-  int a[a_size];
-  for (int i = 0; i < a_size; ++i) {
+    int number{};
+    long sum{};
+    int counter{};
+    int average{};
+
     std::cout << "Insert the number: ";
-    std::cin >> a[i];
-  }
+    std::cin >> number;
 
-  for (int i = 0; i < a_size; ++i) {
-    sum += a[i];
-  }
+    while (number > 0) {
 
-  std::cout << "The sum of your numbers: " << sum << std::endl;
-  float avarege = sum / a_size;
-  std::cout << "Average: " << avarege << std::endl;
+        sum += number % 10;
+        number = number / 10;
+        counter++;
+    }
 
-  return 0;
+    average = sum / counter;
+    std::cout << "Sum: " << sum << std::endl;
+    std::cout << "Average: " << average << std::endl;
+    return 0;
 }
