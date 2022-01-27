@@ -33,10 +33,12 @@ int main() {
         x2 = ((-b) - sqrt(d)) / kConst;
         std::cout << "x1 = " << x1 << "\n";
         std::cout << "x2 = " << x2 << "\n";
+        return 0;
     }
     if (d == 0) {
         x1 = -(b / kConst);
         std::cout << "x1 = x2 = " << x1 << "\n";
+        return 0;
     }
     if (d < 0) {
         std::cout << "D < 0, There are no real roots of the equation";
