@@ -8,7 +8,7 @@ int main() {
     const int maxRange{ 255 };
 
     long double a{};
-    std::cout << " Please enter numbers: a,b,c in range[2..255]\n";
+    std::cout << " Please enter numbers: a,b,c in range " << " [ " << minRange << " .. " << maxRange << " ]\n";
     std::cin >> a;
     if (a == 0) {
         std::cout << "The equation is not quadratic" << std::endl;
