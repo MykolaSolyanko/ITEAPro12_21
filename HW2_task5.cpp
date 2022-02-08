@@ -1,6 +1,6 @@
 #include <iostream>
 
-long long best_div{};  //лучший делитель
+long long best_div{}; //лучший делитель
 
 int division(int num) {
 
