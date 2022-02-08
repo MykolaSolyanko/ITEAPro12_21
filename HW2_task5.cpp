@@ -29,7 +29,7 @@ int division(int num) {
 
 int main() {
 
-    int a_input;
+    int a_input{};
 
     std::cout << "Enter plus number"
               << "\n";
