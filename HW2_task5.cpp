@@ -4,7 +4,7 @@ long long best_div{}; //лучший делитель
 
 int division(int num) {
 
-    for (size_t i = num; i > 0; --i) { //перебераю числа до данного
+    for (size_t i = num; i > 0; --i) {  //перебераю числа до данного
 
         int p = i; // переменная для работы внутри цикла
 
